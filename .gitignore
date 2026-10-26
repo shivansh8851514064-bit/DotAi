@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+client/dist/
+
+# Cache & Storage
+contract_cache.json
+temp_uploads/
+test_contracts/
+server/document_storage/*
+!server/document_storage/.gitkeep
+server/data/*.db
+server/data/*.sqlite3

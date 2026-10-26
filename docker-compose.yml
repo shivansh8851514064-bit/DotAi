@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    ports:
+      - "8000:8000" # Change to 5000:5000 if your python app uses port 5000
+    env_file:
+      - .env
+
+  client:
+    build: ./client
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server

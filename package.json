@@ -1,0 +1,12 @@
+{
+  "name": "contract-extractor-main",
+  "version": "1.0.0",
+  "description": "NLP Contract Extractor Full Stack Runner",
+  "type": "module",
+  "scripts": {
+    "dev": "node run-all.js",
+    "start": "node run-all.js",
+    "client": "npm --prefix client run dev",
+    "server": "python -m uvicorn main:app --host 0.0.0.0 --port 8000"
+  }
+}
